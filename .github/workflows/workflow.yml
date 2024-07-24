@@ -9,7 +9,6 @@ permissions:
 env:
     AZURE_RESOURCEGROUP_NAME: ToyWebsite
     ENVIRONMENT: nonprod
-    AZURE_LOCATION: eastus2
 
 jobs:
   deploy:
@@ -28,4 +27,3 @@ jobs:
         template: ./deploy/main.bicep
         parameters: >
           environmentType=${{ env.ENVIRONMENT }}
-          location=${{ env.AZURE_LOCATION }}
