@@ -9,7 +9,7 @@ permissions:
 env:
     AZURE_RESOURCEGROUP_NAME: ToyWebsite
     ENVIRONMENT: nonprod
-    AZURE_LOCATION: eastus
+    AZURE_LOCATION: westus2
 
 jobs:
   deploy:
